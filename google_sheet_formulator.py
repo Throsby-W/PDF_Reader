@@ -8,10 +8,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 import webbrowser, sheets_pdfreader
 
 start = "4"
-end = "382"
-top_left = 384
+end = "353"
+top_left = 355
 add_start = str(top_left+27)
-add_end = str(int(add_start)+20)
+add_end = str(int(add_start)+40)
 york = "York*"
 wash = "Washington*"
 set = "Set*"

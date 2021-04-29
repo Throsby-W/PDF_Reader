@@ -11,7 +11,7 @@ except IndexError:
     date_prefix = input("\nWow\nThat was an early mistake! Did you also for get to download the files today too?\n\nWhat's the prefix du jour? ")
 
 def csvize(file_path_in):
-
+    # file_path = "/Users/Throsby/Documents/GitHub/PDF_Reader/Test PDFs/427workingsplinter.pdf"
     file_path = "/Users/Throsby/Documents/GitHub/PDF_Reader/Test PDFs/{}{}ing.pdf".format(date_prefix,file_path_in)
     ###Handle the various ways that I might forget to include the date ###
     try:
@@ -61,7 +61,8 @@ def csvize(file_path_in):
     pdf_tables.to_csv("%s.csv"%(tail_wo_filetype), index=False)
     print("%s.csv Done!"%(tail_wo_filetype))
 
-
+# HERE for custom surprise formatting
+# sheets_pdfreader.make_sheet_up(file_path)
 for file in ["work","test","fitt"]:
     pathstring = "/Users/Throsby/Documents/GitHub/PDF_Reader/Test PDFs/{}{}ing.pdf".format(date_prefix,file)
     if(path.exists(pathstring)):
